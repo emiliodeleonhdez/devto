@@ -6,6 +6,7 @@ aside {
   aside {
     display: block;
     align-items: flex-start;
+    flex-direction: row;
     @include center-item();
   }
 

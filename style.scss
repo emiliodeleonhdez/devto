@@ -3,7 +3,7 @@
 @mixin center-item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 @import 'asides';
 @import 'posts';
