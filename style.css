@@ -1,3 +1,4 @@
+@import url(_variables.scss);
 aside {
   display: none;
 }
@@ -81,7 +82,7 @@ body {
 
 .main-header__selected-nav {
   padding: .5em .6em;
-  backgtound-color: #F9FAFA;
+  background-color: #F9FAFA;
   color: #08090A;
 }
 
@@ -139,9 +140,18 @@ body {
   color: #08090A;
 }
 
+.article-post__user-info p:hover {
+  background-color: #00000011;
+  border-radius: 5px;
+}
+
 .article-post__user-info time {
   font-size: .75em;
   color: #7b8996;
+}
+
+.article-post__user-info time:hover {
+  color: #08090A;
 }
 
 .article-post__title a {
@@ -149,10 +159,14 @@ body {
   color: #08090A;
 }
 
+.article-post__title a:hover {
+  color: #323ebe;
+}
+
 .article-post__tags a {
   text-decoration: none;
   color: #08090A;
-  color: #353c43;
+  color: #7b8996;
   font-size: .85em;
 }
 
@@ -162,7 +176,11 @@ body {
 
 .article-post__tags a:before {
   content: "#";
-  color: #98a2ac;
+  color: #7b8996;
+}
+
+.article-post__tags a:hover {
+  color: #08090A;
 }
 
 .article-post__social {
@@ -190,6 +208,12 @@ content-reactions-comments__reactions:not(:first-child) {
   padding-left: .75em;
 }
 
+.content-reactions-comments__reactions:hover,
+content-reactions-comments__reactions:hover {
+  background-color: #00000011;
+  border-radius: 5px;
+}
+
 .content-reactions-comments img {
   vertical-align: middle;
 }
@@ -199,13 +223,22 @@ content-reactions-comments__reactions:not(:first-child) {
   color: #7b8996;
 }
 
+.content-released__timehover {
+  color: #64707d;
+}
+
 .content-released__button {
   background-color: #D2D6DB;
   border: none;
   outline: none;
-  padding: .5em .75em;
+  padding: .5rem .75rem;
+  margin-left: .35rem;
   border-radius: 5px;
   color: #363D44;
+}
+
+.content-released__button:hover {
+  background-color: #b5bdc4;
 }
 
 @media (max-width: 425px) {
@@ -229,11 +262,17 @@ content-reactions-comments__reactions:not(:first-child) {
     display: -ms-flexbox;
     display: flex;
   }
+  .ul-nav__nav-item:hover {
+    background-color: #3b49df1a;
+  }
   .ul-nav__item-link, .ul-nav__item-link-active {
     text-decoration: none;
     color: #08090A;
     display: block;
     padding: .75em;
+  }
+  .ul-nav__item-link:hover, .ul-nav__item-link-active:hover {
+    color: #3b49df;
   }
   .ul-nav__item-link-active {
     margin: 0 .25em;
@@ -246,8 +285,13 @@ content-reactions-comments__reactions:not(:first-child) {
     content: "";
     bottom: 0;
     height: 3px;
-    width: calc(100% - 1.5em);
+    width: calc(80% - 1.2rem);
     background-color: #3b49df;
+  }
+  .ul-nav__item-link-active:hover {
+    width: calc(140% - 1.5rem);
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   .article-post__description,
   .article-post__social {
