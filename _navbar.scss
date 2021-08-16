@@ -1,0 +1,100 @@
+// <nav class="navbar">
+// <div class="home">
+//   <div class="hamburguesa">H</div>
+//   <div class="home-button"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--R9qwOwpC--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/78hs31fax49uwy6kbxyw.png">
+//   </div>
+// </div>
+// <div class="search">
+//   <input type="search" id="site-search" name="search" placeholder="Search...">
+// </div>
+// <div class="buttons">
+//   <div class="btn-createPost">1</div>
+//   <div class="btn btn-connect">2</div>
+//   <div class="btn btn-notifications">3</div>
+//   <div class="btn-avatar">4</div>
+// </div>
+// </nav>
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 1rem;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+
+    .home {
+      display: flex;
+      flex-direction: row;
+      margin-right: auto;
+
+      .hamburguesa {
+        visibility: hidden;
+      }
+
+      img {
+        width: 50px;
+        height: 40px;
+        border-radius: 3px;
+      }
+    }
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 25%;
+      margin-left: auto;
+
+      .btn-createPost>button {
+        background-color: #323ebe;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: .02rem;
+        border-radius: 5px;
+        padding: 8px 16px;
+      }
+
+      .btn-connect {
+        margin: 0 4px;
+        border-radius: 50%;
+        padding: 8px;
+
+        .btn-connect>img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .btn-notifications {
+        margin: 0 4px;
+        border-radius: 50%;
+        padding: 8px;
+
+        .btn-notifications>img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .btn-avatar {
+        margin: 0 4px;
+        border-radius: 50%;
+        padding: 8px;
+
+        .btn-avatar>img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+        }
+      }
+
+
+      .btn-avatar>img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
