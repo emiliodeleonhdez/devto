@@ -1,55 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="styles.css">
+    <title>asideright</title>
 </head>
 <body>
-  <nav id="main-menu">
-    <div>
-      <div id="hamburguesa">H</div>
-      <div id="logo">
-        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--R9qwOwpC--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/78hs31fax49uwy6kbxyw.png">
-      </div>
-    </div>
-    <div>
-      <div>Btn1</div>
-      <div>Btn2</div>
-      <div>Btn3</div>
-      <div class="avatar"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--R9qwOwpC--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/78hs31fax49uwy6kbxyw.png"></div>
-    </div>
-  </nav>
-  <div id="container">
-    <aside id="aside-left">
-      Menu
-    </aside>
-    <main>
-      <nav class="posts-menu">Filtros</nav>
-      <article class="post">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="arbj5z9x35iumprgat89iw4sn2p8xegt" class="crayons-icon"><title id="arbj5z9x35iumprgat89iw4sn2p8xegt">Connect</title>
-          <path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10H2l2.929-2.929A9.969 9.969 0 012 12zm4.828 8H12a8 8 0 10-8-8c0 2.152.851 4.165 2.343 5.657l1.414 1.414-.929.929zM8 13h8a4 4 0 11-8 0z"></path>
-        </svg>
-      </article>
-      <article class="post">
-        Post
-      </article>
-      <article class="post">
-        Post
-      </article>
-      <article class="post">
-        Post
-      </article>
-      <article class="post">
-        Post
-      </article>
+    
+    <div class="aside-right-main-container">
+       
+        <aside id="asiderightbar" class="rightsidebar">
 
-    </main>
-    <aside id="aside-right">
-      Listings
+        
+        <div class="right_header-container">
+            <img class="devnews" src="aside_right_image.png">
+            <p>
+                <strong> <a class="community" href="https://forem.dev">Forem.dev</a></strong> is a community dedicated to discussing the open source community software that powers DEV.</p>
+            <p>
+                <a class="join" href="https://forem.dev/enter">→ Join</a>
+            </p>    
+            </div>
+      
+      <div class="listings-container">
+          <section>
+              <header>
+                  <h3 class="Listings"><strong>Listings</strong></h3>
+                  <div class="SeeAll">
+                      <h4>See all</h4>
+                  </div>
+              </header>
+              
+              <a>
+              <div class="first_article_listings">
+                  JavaScript Illustrated: A FREE handbook of important JS concepts
+              </div>
+              <div class="collabs">collabs</div>
+              </a>
+              <a class="second_section_listings">
+                  <div>Found.dev</div>
+                  <div class="products">products</div>
+              </a>
+              
+              <a class="third_section_listings">
+                  <div> Hack this Fall 2.0</div>
+                  <div class="eventsrightsection">events</div>
+              </a>
+              <a class="fourth_section_listings">
+                  <div>[September 9]🎸 React, REST API, & Express Server Workshop 🎸</div>
+                  <div class="eventsrightsection">events</div>
+              </a>
+
+              <a class="fifth_section_listings">
+                  <div>Walktrough Wednesday with Arsalan</div>
+                  <div class="eventsrightsection">events</div>
+              </a>
+              <a class="footer_listing_container">Create a Listing</a>
+            </div>
+            </section>
+      
+        <div class="news">
+            <div class="news_container">
+                <section>
+                    <header>
+                        <h3 id="news">
+                            <a class="newslink" href="t/news">#news</a></h3>
+                    </header>
+                    <a>
+                    <div class="first article news">
+                        Better JS Logging for Micro-Frontends, Browser, Node
+                    </div>
+                    <span class="newindicator">new</span>
+                    </a>
+                    <a class="second article news">
+                        <div>Game Dev Digest --- Issue #106 - Improve  You Editor Workflow</div>
+                        <span class="newindicator">new</span>
+                    </a>
+                    
+                    <a class="third article news">
+                        <div> Hexagon 1.4.0  released !!! 🎉</div>
+                        <span class="newindicator">new</span>
+                    </a>
+                    <a class="fourth article news">
+                        <div>Inside the Gpt-3-Powered Chatbot That Someone Used to Talk to Their Fiancé Who Passed — on DevNews </div>
+                        <span class="newindicator">new</span>
+                    </a>
+      
+                    <a class="fifth article news">
+                        <div>How to build a Firebase GUI/Admin Panel - Drona HQ</div>
+                        <span class="newindicator">new</span>
+                    </a>
+                   
+                  </div>
+                  </section>
+
+        </div>
+
     </aside>
-  </div>
+    </div>
 </body>
 </html>
