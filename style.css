@@ -1,0 +1,373 @@
+@import url(_variables.scss);
+aside {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  aside {
+    display: block;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #aside-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 235px;
+    min-width: 235px;
+    background-color: #FFF;
+    border: 1px solid lightgray;
+  }
+  #aside-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 320px;
+    min-width: 320px;
+    background-color: #FFF;
+    border: 1px solid lightgray;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #eef0f1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5em .75em;
+}
+
+.main-header__primary-title {
+  font-size: 1.25em;
+}
+
+.main-header__selected-nav {
+  padding: .5em .6em;
+  background-color: #F9FAFA;
+  color: #08090A;
+}
+
+.main-header__container-nav {
+  display: none;
+}
+
+.content-post {
+  padding: 0 .75em .75em .75em;
+}
+
+.article-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: .5em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d0d5da;
+  background-color: #F9FAFA;
+}
+
+.article-post:not(:last-child) {
+  margin-bottom: .75em;
+}
+
+.article-post__image img {
+  vertical-align: top;
+  width: 100%;
+  border-radius: .5em .5em 0 0;
+}
+
+.article-post__content {
+  padding: 1em;
+}
+
+.article-post__user-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.article-post__avatar img {
+  border-radius: 50%;
+  width: 2em;
+  margin-right: .75em;
+}
+
+.article-post__user-info p {
+  font-size: .9em;
+  color: #08090A;
+}
+
+.article-post__user-info p:hover {
+  background-color: #00000011;
+  border-radius: 5px;
+}
+
+.article-post__user-info time {
+  font-size: .75em;
+  color: #7b8996;
+}
+
+.article-post__user-info time:hover {
+  color: #08090A;
+}
+
+.article-post__title a {
+  text-decoration: none;
+  color: #08090A;
+}
+
+.article-post__title a:hover {
+  color: #323ebe;
+}
+
+.article-post__tags a {
+  text-decoration: none;
+  color: #08090A;
+  color: #7b8996;
+  font-size: .85em;
+}
+
+.article-post__tags a:not(:first-child) {
+  padding-left: .75em;
+}
+
+.article-post__tags a:before {
+  content: "#";
+  color: #7b8996;
+}
+
+.article-post__tags a:hover {
+  color: #08090A;
+}
+
+.article-post__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-reactions-comments__reactions,
+content-reactions-comments__reactions {
+  text-decoration: none;
+  color: #08090A;
+  font-size: .9em;
+  color: #353c43;
+}
+
+.content-reactions-comments__reactions:not(:first-child),
+content-reactions-comments__reactions:not(:first-child) {
+  padding-left: .75em;
+}
+
+.content-reactions-comments__reactions:hover,
+content-reactions-comments__reactions:hover {
+  background-color: #00000011;
+  border-radius: 5px;
+}
+
+.content-reactions-comments img {
+  vertical-align: middle;
+}
+
+.content-released__time {
+  font-size: .75em;
+  color: #7b8996;
+}
+
+.content-released__timehover {
+  color: #64707d;
+}
+
+.content-released__button {
+  background-color: #D2D6DB;
+  border: none;
+  outline: none;
+  padding: .5rem .75rem;
+  margin-left: .35rem;
+  border-radius: 5px;
+  color: #363D44;
+}
+
+.content-released__button:hover {
+  background-color: #b5bdc4;
+}
+
+@media (max-width: 425px) {
+  .d-none-xs {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-header__selected-nav {
+    display: none;
+  }
+  .main-header__container-nav {
+    display: block;
+  }
+  .ul-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .ul-nav__nav-item:hover {
+    background-color: #3b49df1a;
+  }
+  .ul-nav__item-link, .ul-nav__item-link-active {
+    text-decoration: none;
+    color: #08090A;
+    display: block;
+    padding: .75em;
+  }
+  .ul-nav__item-link:hover, .ul-nav__item-link-active:hover {
+    color: #3b49df;
+  }
+  .ul-nav__item-link-active {
+    margin: 0 .25em;
+    font-weight: bold;
+    position: relative;
+  }
+  .ul-nav__item-link-active::after {
+    display: block;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    height: 3px;
+    width: calc(80% - 1.2rem);
+    background-color: #3b49df;
+  }
+  .ul-nav__item-link-active:hover {
+    width: calc(140% - 1.5rem);
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .article-post__description,
+  .article-post__social {
+    margin-left: 44px;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  background-color: #eef0f1;
+}
+
+#main-menu {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #FFF;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#main-menu > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-menu img {
+  width: 45px;
+}
+
+.avatar > img {
+  border-radius: 50%;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main {
+  width: 100%;
+}
+
+main .posts-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  border: 1px solid black;
+}
+/*# sourceMappingURL=style.css.map */

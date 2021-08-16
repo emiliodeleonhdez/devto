@@ -26,26 +26,190 @@
     <aside id="aside-left">
       Menu
     </aside>
-    <main>
-      <nav class="posts-menu">Filtros</nav>
-      <article class="post">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="arbj5z9x35iumprgat89iw4sn2p8xegt" class="crayons-icon"><title id="arbj5z9x35iumprgat89iw4sn2p8xegt">Connect</title>
-          <path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10H2l2.929-2.929A9.969 9.969 0 012 12zm4.828 8H12a8 8 0 10-8-8c0 2.152.851 4.165 2.343 5.657l1.414 1.414-.929.929zM8 13h8a4 4 0 11-8 0z"></path>
-        </svg>
-      </article>
-      <article class="post">
-        Post
-      </article>
-      <article class="post">
-        Post
-      </article>
-      <article class="post">
-        Post
-      </article>
-      <article class="post">
-        Post
-      </article>
+    <main class="main-articles">
+      <header class="main-header">
+        <h1 class="main-header__primary-title">Posts</h1>
+        <select class="main-header__selected-nav">
+          <option value="">Feed</option>
+          <option value="">Week</option>
+          <option value="">Month</option>
+          <option value="">Year</option>
+          <option value="">Infinity</option>
+          <option value="">Latest</option>
+        </select>
+        <nav class="main-header__container-nav">
+          <ul class="ul-nav">
+            <li class="ul-nav__nav-item"><a class="ul-nav__item-link-active" href="#">Feed</a></li>
+            <li class="ul-nav__nav-item"><a class="ul-nav__item-link" href="#">Week</a></li>
+            <li class="ul-nav__nav-item"><a class="ul-nav__item-link" href="#">Month</a></li>
+            <li class="ul-nav__nav-item"><a class="ul-nav__item-link" href="#">Year</a></li>
+            <li class="ul-nav__nav-item"><a class="ul-nav__item-link" href="#">Infinity</a></li>
+            <li class="ul-nav__nav-item"><a class="ul-nav__item-link" href="#">Latest</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <section class="content-post">
+        
+        <article class="article-post">
+          <div class="article-post__image">
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--UICVO2or--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/iey6fxonkgrenjr8yxi6.png" alt="">
+          </div>
+          <div class="article-post__content">
+            <div class="article-post__user-description">
+              <a class="article-post__avatar" href="#"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--EO_hPk_v--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/561035/f0dd96a3-bc20-4bb3-8717-03125438c6ab.jpeg" alt=""></a>
+              <div class="article-post__user-info">
+                <p>Nilanth</p>
+                <time>Aug 15</time>
+              </div>
+            </div>
+            <div class="article-post__description">
+              <h2 class="article-post__title"><a href="">No More ../../../ Import in React</a></h2>
+              <div class="article-post__tags">
+                <a href="#">react</a>
+                <a href="#">javascript</a>
+                <a href="#">webdev</a>
+                <a href="#">beginners</a>
+              </div>
+            </div>
+            <div class="article-post__social">
+              <div class="content-reactions-comments">
+                <a class="content-reactions-comments__reactions" href="#"><img src="./svg-images/Reactions.svg" alt=""> <span>105 <span class="d-none-xs">reactions</span></span></a>
+                <a class="content-reactions-comments__reactions" href="#"><img src="./svg-images/Comments.svg" alt=""> <span>6 <span class="d-none-xs">comments</span></span></a>
+              </div>
+              <div class="content-released">
+                <small class="content-released__time">13 min read</small>
+                <button class="content-released__button">Save</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="article-post">
+          <div class="article-post__content">
+            <div class="article-post__user-description">
+              <a class="article-post__avatar" href="#"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ei6QfEZ1--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/684466/d5efaddd-7e16-487d-a4c3-8575f4a3cee4.jpg" alt=""></a>
+              <div class="article-post__user-info">
+                <p>TechSnack - Technology Tutorials</p>
+                <time>Aug 15</time>
+              </div>
+            </div>
+            <div class="article-post__description">
+              <h2 class="article-post__title"><a href="">Understanding Progressive Web Apps: Delivering a Mobile Experience - HTML5 and JavaScript Service Workers in 2021</a></h2>
+              <div class="article-post__tags">
+                <a href="#">javascript</a>
+                <a href="#">webdev</a>
+                <a href="#">html</a>
+                <a href="#">pwa</a>
+              </div>
+            </div>
+            <div class="article-post__social">
+              <div class="content-reactions-comments">
+                <a class="content-reactions-comments__reactions" href="#"><img src="./svg-images/Reactions.svg" alt=""> <span>105 <span class="d-none-xs">reactions</span></span></a>
+                <a class="content-reactions-comments__reactions" href="#"><img src="./svg-images/Comments.svg" alt=""> <span>6 <span class="d-none-xs">comments</span></span></a>
+              </div>
+              <div class="content-released">
+                <small class="content-released__time">2 min read</small>
+                <button class="content-released__button">Save</button>
+              </div>
+            </div>
+          </div>
+        </article>
 
+        <article class="article-post">
+          <div class="article-post__content">
+            <div class="article-post__user-description">
+              <a class="article-post__avatar" href="#"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--apGpVzA---/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/624270/2aec2b8b-9cdf-44c2-a4ca-ce4e24cda4a1.png" alt=""></a>
+              <div class="article-post__user-info">
+                <p>Modern web</p>
+                <time>Aug 15</time>
+              </div>
+            </div>
+            <div class="article-post__description">
+              <h2 class="article-post__title"><a href="">How to create Disney plus clone with pure HTML, CSS, JS</a></h2>
+              <div class="article-post__tags">
+                <a href="#">html</a>
+                <a href="#">css</a>
+                <a href="#">javascript</a>
+                <a href="#">webdev</a>
+              </div>
+            </div>
+            <div class="article-post__social">
+              <div class="content-reactions-comments">
+                <a class="content-reactions-comments__reactions" href="#"><img src="./svg-images/Reactions.svg" alt=""> <span>263 <span class="d-none-xs">reactions</span></span></a>
+                <a class="content-reactions-comments__reactions" href="#"><img src="./svg-images/Comments.svg" alt=""> <span>8 <span class="d-none-xs">comments</span></span></a>
+              </div>
+              <div class="content-released">
+                <small class="content-released__time">9 min read</small>
+                <button class="content-released__button">Save</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-post">
+          <div class="article-post__content">
+            <div class="article-post__user-description">
+              <a class="article-post__avatar" href="#"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--KoA4Upsq--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/676102/80ee6aa9-13fa-4c79-8fa9-620f2b56cfa4.jpg" alt=""></a>
+              <div class="article-post__user-info">
+                <p>Gene</p>
+                <time>Aug 14 (2 days ago)</time>
+              </div>
+            </div>
+            <div class="article-post__description">
+              <h2 class="article-post__title"><a href="">The Best Premium Tailwind CSS Templates & Components</a></h2>
+              <div class="article-post__tags">
+                <a href="#">tailwindcss</a>
+                <a href="#">design</a>
+                <a href="#">webdev</a>
+                <a href="#">css</a>  
+              </div>
+            </div>
+            <div class="article-post__social">
+              <div class="content-reactions-comments">
+                <a class="content-reactions-comments__reactions" href="#"><img src="./svg-images/Reactions.svg" alt=""> <span>67 <span class="d-none-xs">reactions</span></span></a>
+                <a class="content-reactions-comments__reactions" href="#"><img src="./svg-images/Comments.svg" alt=""> <span>8 <span class="d-none-xs">comments</span></span></a>
+              </div>
+              <div class="content-released">
+                <small class="content-released__time">4 min read</small>
+                <button class="content-released__button">Save</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="article-post">
+          <div class="article-post__content">
+            <div class="article-post__user-description">
+              <a class="article-post__avatar" href="#"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--wVcxk_Z1--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/547297/fb9f6bca-6a2f-4381-bcdf-ea407f05fc97.jpeg" alt=""></a>
+              <div class="article-post__user-info">
+                <p>DevCronin</p>
+                <time>Aug 14 (2 days ago)</time>
+              </div>
+            </div>
+            <div class="article-post__description">
+              <h2 class="article-post__title"><a href="">Level Up with JavaScript</a></h2>
+              <div class="article-post__tags">
+                <a href="#">javascript</a>
+                <a href="#">webdev</a>
+                <a href="#">beginners</a>
+                <a href="#">tutorial</a> 
+              </div>
+            </div>
+            <div class="article-post__social">
+              <div class="content-reactions-comments">
+                <a class="content-reactions-comments__reactions" href="#"><img src="./svg-images/Reactions.svg" alt=""> <span>64 <span class="d-none-xs">reactions</span></span></a>
+                <a class="content-reactions-comments__reactions" href="#"><img src="./svg-images/Comments.svg" alt=""> <span>7 <span class="d-none-xs">comments</span></span></a>
+              </div>
+              <div class="content-released">
+                <small class="content-released__time">2 min read</small>
+                <button class="content-released__button">Save</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+      </section>
     </main>
     <aside id="aside-right">
       Listings
