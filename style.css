@@ -175,6 +175,32 @@ aside {
   max-height: 330px;
 }
 
+#aside-left li:hover {
+  background-color: #00000011;
+}
+
+#aside-left li:hover a {
+  color: #323ebe;
+}
+
+#aside-left li:hover svg:hover {
+  fill: black;
+}
+
+.aside-left_stickers_container_img h2 {
+  color: #3b49df;
+}
+
+.aside-left_stickers_container svg:hover {
+  background-color: #00000011;
+  fill: black;
+}
+
+.aside-left_image {
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+
 .post {
   display: -webkit-box;
   display: -ms-flexbox;
