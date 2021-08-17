@@ -2,7 +2,7 @@ aside {
   display: none;
 }
 
-@media (min-width: 900px){
+@media (min-width: 780px){
   aside {
     display: block;
     align-items: flex-start;
@@ -14,9 +14,8 @@ aside {
     @include center-item();
     width: 235px;
     min-width: 235px;
-    background-color: #FFF;
-    border: 1px solid lightgray;
   }
+
   #aside-right {
     @include center-item();
     width: 320px;
@@ -24,4 +23,118 @@ aside {
     background-color: #FFF;
     border: 1px solid lightgray;
   }
+}
+
+//Start my dev 
+
+.devCommunity {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.aside-left_list{
+  text-decoration: none;
+  list-style: none;
+  margin-top: 0;
+
+}
+.aside-left_item{
+  text-decoration: none;
+  margin: 10px;
+  color:black;
+  a{
+    display: flex;
+    align-items: center;
+  }
+  .aside-left_item:hover{
+    /*     background-color: lightblue; */
+      color:blue;
+    }
+    .aside-left_item:hover{
+      background-color: lightblue;
+    /*     color:black; */
+    
+    }    
+}
+
+.aside-left_image{
+  max-width: 24px;
+  max-height: 24px;
+  margin-right: 8px;
+}
+.aside-left_list {
+  padding: 0;
+}
+
+.aside-left_socialmedia{
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  .aside-left_image{
+    fill: gray;
+  }
+}
+.aside-left_container_secondary{
+  display: flex;
+  background-color: lightgray;
+  margin: 5px;
+  height: 250px;
+  width: 220px;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  #aside-left_container_btn{
+    background-color: $nav-button-background;
+    border-radius: 5px;
+    padding: 8px;
+    padding-inline-end: 16px;
+    border: none;
+    margin: 5px;
+    width: 180px;
+    color: rgb(249, 250, 250);
+    font-weight:solid;
+    font-size: 16px;
+    font-weight: 500;
+
+  }
+  .aside-left_container_secondary_innertext_tittle{
+    color:$nav-button-background;
+    font-size: 18x;
+    font-weight: 700;
+
+  }
+  .aside-left_container_secondary_innertext_bold{
+    font-weight: bold;
+  }
+  .aside-left_container_btn h3{
+    text-align: center;
+    color: $nav-button-background;
+    font-weight: 500;
+
+  }
+}
+.aside-left_container_secondary_innertext{
+  margin-bottom: 15px;
+}
+.aside-left_socialmedia{
+  .aside-left_item{
+    margin: 5px;
+  }
+}
+.aside-left_devsticker{
+  display: flex;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  flex-direction: column;
+/*   .aside-left_devsticker>img{
+    margin: 8px
+    margin-bottom: 0px;
+    max-height: 100%;
+    max-width: 100%;
+  } */
 }

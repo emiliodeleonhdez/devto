@@ -1,27 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="styles-2.css">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/practicaldev/image/fetch/s--R9qwOwpC--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/78hs31fax49uwy6kbxyw.png" type="image/x-icon">
+    <title>DEV Community 👩‍💻👨‍💻</title>
 </head>
 <body>
-  <!-- <nav id="main-menu">
-    <div>
-      <div id="hamburguesa">H</div>
-      <div id="logo">
-        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--R9qwOwpC--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/78hs31fax49uwy6kbxyw.png">
-      </div>
-    </div>
-    <div>
-      <div>Btn1</div>
-      <div class="nav-button"><img src="/svg-images/connect.svg" alt="Connect"></div>
-      <div class="nav-button"><img src="/svg-images/notifications.svg" alt="Notifications"></div>
-      <div class="avatar"><img src="avatar-navbar.png"></div>
-    </div>
-  </nav> -->
 
   <nav class="navbar">
     <div class="home">
@@ -30,7 +17,7 @@
       </div>
     </div>
     <div class="search">
-      <input type="search" id="site-search" name="search" placeholder="Search...">
+      <input class="search-bar" type="search" id="site-search" name="search" placeholder="Search...">
     </div>
     <div class="buttons">
       <div class="btn-createPost"><button>Create post</button></div>
@@ -42,19 +29,11 @@
 
 
   <div id="container">
+
     <aside id="aside-left">
-      <div class="aside-left_container_secondary">
-        <span class="aside-left_container_secondary_innertext">
-          <a class="aside-left_container_secondary_innertext_tittle">DEV Community</a>
-          <a class="aside-left_container_secondary_innertext_bold">is a community of 674,800 amazing developers</a>
-          We're a place where coders share, stay up-to-date and grow their careers.</span>
-          <div class="aside-left_container_btn">
-              <button id="aside-left_container_btn">Create an account</button>
-              <h3>Log in</h3>
-          </div>
-      </div>
-      <h4 class="aside-left_title">Dev Community</h4>
-      <ul class="aside-left_list">
+      <div class="devCommunity">
+        <h4 class="aside-left_title">Dev Community</h4>
+        <ul class="aside-left_list">
           <li><a class="aside-left_item" href=""><img class="aside-left_image" src="/svg-images/home.svg">Home</a></li>
           <li><a class="aside-left_item" href=""><img class="aside-left_image" src="/svg-images/home.svg">Sign In/Up</a></li>
           <li><a class="aside-left_item" href=""><img class="aside-left_image" src="/svg-images/listing.svg">Listing</a></li>
@@ -66,7 +45,9 @@
           <li><a class="aside-left_item" href=""><img class="aside-left_image" src="/svg-images/Sponsors.svg">Sponsors</a></li>
           <li><a class="aside-left_item" href=""><img class="aside-left_image" src="/svg-images/About.svg">About</a></li>
           <li><a class="aside-left_item" href=""><img class="aside-left_image" src="/svg-images/Contact.svg">Contact</a></li>
-      </ul>
+        </ul>
+      </div>
+      
       <h4 class="aside-left_title">Other</h4>
       <ul class="aside-left_list">
           <li><a class="aside-left_item" href=""><img class="aside-left_image" src="/svg-images/CodeConduct.svg">Code of Conduct</a></li>
@@ -86,6 +67,7 @@
       </div>
       
     </aside>
+
     <main class="main-articles">
       <header class="main-header">
         <h1 class="main-header__primary-title">Posts</h1>
@@ -271,9 +253,132 @@
         
       </section>
     </main>
+
+    
     <aside id="aside-right">
-      Listings
+
+      <div class="aside-right_forem">
+        <a href="" class="aside-right_forem_img"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--SHlJgkk0--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://jess.forem.lol/remoteimages/uploads/articles/a3ojuveqrskiei1m6x6x.png" alt="ForemDev"></a>
+        <p class="aside-right_forem_text"> <span class="aside-right_forem_text_bold"><Forem class="dev"></Forem></span> is a community dedicated to discussing the open source community software that powers DEV.</p>
+        <p><a class="join" href="https://forem.dev/enter">→ Join</a></p> 
+      </div>
+
+      <div class="aside-right_listings">
+        <div class="aside-right_listings-titles">
+          <p class="aside-right_listings-title-1">Listings</p>
+          <p class="aside-right_listings-title-2">See all</p>
+        </div>
+        <div class="listings-container">
+          <div class="listings-item"><a href=""><p>AFH - Ionic/React Native/NodeJS/Consultant</p><p>forhire</p></a></div>
+          <div class="listings-item"><a href=""><p>❗ ATTENTION ❗ DevTernity is coming!</p><p>events</p></a></div>
+          <div class="listings-item"><a href=""><p>Bakup.io - Is your company data safe? Take away the stress of backup management for FREE</p><p>products</p></a></div>
+          <div class="listings-item"><a href=""><p>Mastering Laravel Validations rules book</p><p>education</p></a></div>
+          <div class="listings-item"><a href=""><p>JavaScript Illustrated: A FREE handbook of important JS Concept</p><p>collabs</p></a></div>
+        </div>
+        <div class="listingCreate">
+          <p>Create a listing</p>
+        </div>
+      </div>
+      <div class="aside-right_news">
+        <div class="aside-right_news-titles">
+          <p class="aside-right_news-title-1">#news</p>
+        </div>
+        <div class="news-container">
+          <div class="listings-item"><a href=""><p>Titanium News #5</p><p class="New">New</p></a></div>
+          <div class="listings-item"><a href=""><p>WhatsApp's New privacy Feature - For bad or for good use</p><p class="New">New</p></a></div>
+          <div class="listings-item"><a href=""><p>This Week in Flutter #16</p><p class="New">New</p></a></div>
+        </div>
+      </div>
     </aside>
-  </div>
+
+
+    <!-- <aside id="aside-right">
+    
+    <div class="aside-right-main-container">
+
+        
+        <div class="right_header-container">
+          <div class="right_header_img"> -->
+            <!-- <img class="devnews" src="https://res.cloudinary.com/practicaldev/image/fetch/s--SHlJgkk0--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://jess.forem.lol/remoteimages/uploads/articles/a3ojuveqrskiei1m6x6x.png"> -->
+          <!-- </div>
+            <p><strong> <a class="community" href="https://forem.dev">Forem.dev</a></strong> is a community dedicated to discussing the open source community software that powers DEV.</p>
+            <p><a class="join" href="https://forem.dev/enter">→ Join</a></p>    
+        </div>
+      
+      <div class="listings-container">
+          <section>
+              <header>
+                  <h3 class="Listings"><strong>Listings</strong></h3>
+                  <div class="SeeAll">
+                      <h4>See all</h4>
+                  </div>
+              </header>
+              
+              <a>
+              <div class="first_article_listings">
+                  JavaScript Illustrated: A FREE handbook of important JS concepts
+              </div>
+              <div class="collabs">collabs</div>
+              </a>
+              <a class="second_section_listings">
+                  <div>Found.dev</div>
+                  <div class="products">products</div>
+              </a>
+              
+              <a class="third_section_listings">
+                  <div> Hack this Fall 2.0</div>
+                  <div class="eventsrightsection">events</div>
+              </a>
+              <a class="fourth_section_listings">
+                  <div>[September 9]🎸 React, REST API, & Express Server Workshop 🎸</div>
+                  <div class="eventsrightsection">events</div>
+              </a>
+
+              <a class="fifth_section_listings">
+                  <div>Walktrough Wednesday with Arsalan</div>
+                  <div class="eventsrightsection">events</div>
+              </a>
+              <a class="footer_listing_container">Create a Listing</a>
+            </div>
+            </section>
+      
+        <div class="news">
+            <div class="news_container">
+                <section>
+                    <header>
+                        <h3 id="news">
+                            <a class="newslink" href="t/news">#news</a></h3>
+                    </header>
+                    <a>
+                    <div class="first article news">
+                        Better JS Logging for Micro-Frontends, Browser, Node
+                    </div>
+                    <span class="newindicator">new</span>
+                    </a>
+                    <a class="second article news">
+                        <div>Game Dev Digest --- Issue #106 - Improve  You Editor Workflow</div>
+                        <span class="newindicator">new</span>
+                    </a>
+                    
+                    <a class="third article news">
+                        <div> Hexagon 1.4.0  released !!! 🎉</div>
+                        <span class="newindicator">new</span>
+                    </a>
+                    <a class="fourth article news">
+                        <div>Inside the Gpt-3-Powered Chatbot That Someone Used to Talk to Their Fiancé Who Passed — on DevNews </div>
+                        <span class="newindicator">new</span>
+                    </a>
+      
+                    <a class="fifth article news">
+                        <div>How to build a Firebase GUI/Admin Panel - Drona HQ</div>
+                        <span class="newindicator">new</span>
+                    </a>
+                  </div>
+                  </section>
+
+        </div>
+
+    </aside>
+    </div> -->
 </body>
 </html>
