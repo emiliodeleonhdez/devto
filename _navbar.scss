@@ -43,6 +43,12 @@
         border-radius: 5px;
         padding: 8px 16px;
         visibility: visible;
+        min-width: 5rem;
+
+        &:hover {
+          background-color: #2d38ac;
+          transition: .2s;
+        }
 
         @media (max-width: 780px) {
           visibility: hidden;
@@ -54,6 +60,11 @@
         border-radius: 50%;
         padding: 8px;
 
+        &:hover {
+          background-color: #dadada;
+          transition: .2s;
+        }
+
         .btn-connect>img {
           width: 24px;
           height: 24px;
@@ -63,6 +74,11 @@
         margin: 0 4px;
         border-radius: 50%;
         padding: 8px;
+
+        &:hover {
+          background-color: #dadada;
+          transition: .2s;
+        }
 
         .btn-notifications>img {
           width: 24px;
@@ -93,12 +109,24 @@
   .search {
     width: 402px;
     min-width: 386px;
+    border-style: none;
 
     .search-bar{
-      align-items: flex-start;
       height: 40px;
       border-radius: 5px;
       width: 100%;
+      padding: 0.25rem 0 0 .5rem;
+      border: 1px solid #a7a6a6;
+
+      &::-webkit-input-placeholder {
+        font-size: 1rem;
+      }
+
+      &:focus-visible {
+        border: 1px solid #dadada;
+        box-shadow: 2px 2px 4px  #0419f7;
+        background-color: rgba(167, 166, 166, .1);
+      }
     }
   }
   
